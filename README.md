@@ -5,6 +5,7 @@
 [![Build Status](https://github.com/michaelelliot/swoir/actions/workflows/swift.yml/badge.svg)](https://github.com/michaelelliot/swoir/actions/workflows/swift.yml)
 
 * [Overview](#overview)
+* [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 
@@ -13,6 +14,24 @@
 This Swift package provides useful functionality for use with [Noir][noir] circuits.
 
 [noir]: https://www.noir-lang.org
+
+## <a name="installation">Installation</a>
+
+To use this package simply add it to your Swift project’s `Package.swift`:
+
+```swift
+let package = Package(
+    name: "YourSwiftProject",
+    // ...
+    dependencies: [
+        .package(url: "https://github.com/michaelelliot/Swoir", from: "0.0.1")
+    ],
+    // ...
+    targets: [
+        .target(name: "YourSwiftProject", dependencies: ["Swoir"])
+    ]
+)
+```
 
 ## <a name="usage">Usage</a>
 
